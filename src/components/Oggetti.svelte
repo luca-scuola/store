@@ -9,7 +9,7 @@
   let filterPrice = '';
 
 onMount(() => {
-  fetch('../shopping_trends_updated.csv')
+  fetch('/shopping_trends_updated.csv')
     .then(response => {
       if (!response.ok) {
         throw new Error('Failed to fetch data: ' + response.status);
