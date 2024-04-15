@@ -8,7 +8,7 @@
   let femminePercentage = 0;
 
 onMount(() => {
-  fetch('../shopping_trends_updated.csv')
+  fetch('/shopping_trends_updated.csv')
     .then(response => {
       if (response.ok) {
         return response.text();
