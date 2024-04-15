@@ -7,7 +7,7 @@
 
   // Uso l'hook onMount per caricare i dati non appena il componente viene montato.
   onMount(async () => {
-    const response = await fetch('../shopping_trends_updated.csv');
+    const response = await fetch('/shopping_trends_updated.csv');
     if (response.ok) {
       const csvText = await response.text();
       const items = parseCSV(csvText);
